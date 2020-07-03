@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #192128;
+	margin-top: 40px;
+}
+
+.search {
+	width: 400px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#search {
+	border-radius: 5px;
+	border: solid #7c7676 1px;
+	padding: 5px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+.gallery img {
+	margin: 20px;
+}
+
+.indiv-photo {
+	
+}
+
+/*    MEDIA QUERIES ------------------------- */
+
+@media (min-width: 768px) {
+
+	.gallery {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+}

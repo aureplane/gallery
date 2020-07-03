@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Photo Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/lightgallery/css/lightgallery.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="robots" content="index, follow">      
+</head>
+    
+<body>
+    <div class="search">
+        <input id="search" name="search" placeholder="Search" type="text" data-list=".gallery" class="search">
+    </div>
+
+   <div class="container">
+        <div class="gallery">
+            <div class="item" data-src="img/01.jpg" data-sub-html="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="img/thumbnails/01.jpg" alt="Hay Bales">
+            </div>
+            <div class="item" data-src="img/02.jpg" data-sub-html="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="img/thumbnails/02.jpg" alt="Lake">
+            </div>
+            <div class="item" data-src="img/03.jpg" data-sub-html="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="img/thumbnails/03.jpg" alt="Canyon">
+            </div>
+            <div class="item" data-src="img/04.jpg" data-sub-html="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="img/thumbnails/04.jpg" alt="Iceberg">
+            </div>
+            <div class="item" data-src="img/05.jpg" data-sub-html="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="img/thumbnails/05.jpg" alt="Desert">
+            </div>
+            <div class="item" data-src="img/06.jpg" data-sub-html="Fall is coming, I love when the leaves on the trees start to change color."><img src="img/thumbnails/06.jpg" alt="Fall">
+            </div>
+            <div class="item" data-src="img/07.jpg" data-sub-html="I drove past this plantation yesterday, everything is so green!"><img src="img/thumbnails/07.jpg" alt="Plantations">
+            </div>
+            <div class="item" data-src="img/08.jpg" data-sub-html="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="img/thumbnails/08.jpg" alt="Dunes">
+            </div>
+            <div class="item" data-src="img/09.jpg" data-sub-html="We enjoyed a quiet stroll down this countryside lane. "><img src="img/thumbnails/09.jpg" alt="Countryside Lane">
+            </div>
+            <div class="item" data-src="img/10.jpg" data-sub-html="Sunset at the coast! The sky turned a lovely shade of orange."><img src="img/thumbnails/10.jpg" alt="Sunset">
+            </div>
+            <div class="item" data-src="img/11.jpg" data-sub-html="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="img/thumbnails/11.jpg" alt="Cave">
+            </div>
+            <div class="item" data-src="img/12.jpg" data-sub-html="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="img/thumbnails/12.jpg" alt="Bluebells">
+            </div>
+
+
+        </div>
+</div>
+    
+<footer>
+</footer>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/lightgallery/js/lightgallery.min.js"></script>
+<script>
+$(".gallery").lightGallery({
+    selector: '.item',
+    width: '700px',
+    download: false,
+    counter: false
+
+});
+</script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
